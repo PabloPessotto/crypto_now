@@ -1,0 +1,6 @@
+{
+  "ws" : "wss://stream.binance.com:9443",
+  "baseUrl" : "https://api.binance.com",
+  "apiKey" : "HsfWLTsOCnCyxz9EyapVENWDxXNHFiu5qeHnFKe4krN5XRPlQY3xWf1TWV1MeNfT",
+  "apiSecret" : "vqBKhL1K5ZGsG8mjFDFNxGfiyhoj0RNKz6go1qxZjYgL8qVDaLzXfpxD6nbbZNxe"
+}
