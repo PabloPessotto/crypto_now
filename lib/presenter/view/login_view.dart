@@ -78,6 +78,7 @@ class LoginView extends ConsumerWidget {
                         ),
                         TextFormField(
                           cursorHeight: 25,
+                          keyboardType: TextInputType.emailAddress,
                           cursorColor: AppColor.yellowLogo,
                           decoration: const InputDecoration(
                             hintText: "Enter your email",

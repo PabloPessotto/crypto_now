@@ -43,7 +43,7 @@ class HomeViewModel extends StateNotifier<List<Tickers>> {
     final result = await _getTickers24hrsUseCase.call();
     if (result case Success(value: final tickers)) {
       if (tickers.isNotEmpty) {
-        _timer = Timer.periodic(const Duration(seconds: 10), (timer) {
+        _timer ??= Timer.periodic(const Duration(seconds: 10), (timer) {
           print('Teste - ${state.length}');
           state = tickers
               .where((e) =>
