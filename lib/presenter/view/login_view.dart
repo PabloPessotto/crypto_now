@@ -74,7 +74,7 @@ class LoginView extends ConsumerWidget {
                         Text(
                           "Your Email",
                           textAlign: TextAlign.start,
-                          style: Theme.of(context).textTheme.bodyLarge,
+                          style: Theme.of(context).textTheme.bodyMedium,
                         ),
                         TextFormField(
                           cursorHeight: 25,
@@ -99,7 +99,7 @@ class LoginView extends ConsumerWidget {
                         Text(
                           "Your Password",
                           textAlign: TextAlign.start,
-                          style: Theme.of(context).textTheme.bodyLarge,
+                          style: Theme.of(context).textTheme.bodyMedium,
                         ),
                         TextFormField(
                           cursorHeight: 25,

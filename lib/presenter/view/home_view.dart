@@ -128,7 +128,8 @@ class HomeView extends ConsumerWidget {
                                               "${listCryptos[value.toInt()].symbol}",
                                               style: Theme.of(context)
                                                   .textTheme
-                                                  .bodySmall,
+                                                  .bodySmall
+                                                  ?.copyWith(fontSize: 12),
                                             );
                                           }
                                           return Container();
@@ -257,7 +258,7 @@ class HomeView extends ConsumerWidget {
                                           ),
                                         ],
                                       ),
-                                      SizedBox(width: width / 12),
+                                      SizedBox(width: width / 18),
                                       Flexible(
                                         child: Column(
                                           crossAxisAlignment:
@@ -283,16 +284,18 @@ class HomeView extends ConsumerWidget {
                                                         .toStringAsFixed(3)),
                                                   ),
                                                   SizedBox(width: width / 18),
-                                                  Text(
-                                                    "\$ ${double.parse(crypto.askPrice ?? '0.0').toStringAsFixed(7)}",
-                                                    maxLines: 1,
-                                                    style: Theme.of(context)
-                                                        .textTheme
-                                                        .bodySmall
-                                                        ?.copyWith(
-                                                          fontWeight:
-                                                              FontWeight.w300,
-                                                        ),
+                                                  Flexible(
+                                                    child: Text(
+                                                      "\$ ${double.parse(crypto.askPrice ?? '0.0').toStringAsFixed(7)}",
+                                                      maxLines: 1,
+                                                      style: Theme.of(context)
+                                                          .textTheme
+                                                          .bodySmall
+                                                          ?.copyWith(
+                                                            fontWeight:
+                                                                FontWeight.w300,
+                                                          ),
+                                                    ),
                                                   ),
                                                 ],
                                               ),

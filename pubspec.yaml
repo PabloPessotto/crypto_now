@@ -106,6 +106,20 @@ flutter:
           weight: 800
         - asset: assets/fonts/TT-Bluescreens-Black.ttf
           weight: 900
+
+    - family: Teko
+      fonts:
+        - asset: assets/fonts/teko/Teko-Light.ttf
+          weight: 300
+        - asset: assets/fonts/teko/Teko-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/teko/Teko-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/teko/Teko-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/teko/Teko-Bold.ttf
+          weight: 700
+
   # example:
   # fonts:
   #   - family: Schyler

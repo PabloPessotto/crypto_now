@@ -53,28 +53,18 @@ class CryptoRemoteDataSourceImpl implements CryptoRemoteDataSource {
           for (final j in listWS) {
             allCrypto = [...allCrypto, j];
           }
-          print('allCrypto - $allCrypto');
           yield allCrypto;
         }
       }
     } catch (e) {
       print('Erro stream: $e');
     }
-
-    // return _webSocket?.asyncMap((event) {
-    //   final List json = jsonDecode(event);
-    //   final listCrypto = json.map((e) => CryptoTickerDto.fromJson(e)).toList();
-    //
-    //   print('listCrypto - ${listCrypto.map((e) => e.symbol)}');
-    //   return listCrypto;
-    // });
   }
 
   @override
   Future<void> disconnect() async {
     await _webSocket?.close();
     _webSocket = null;
-    print('isConnected disconnect - ${isConnected()}');
   }
 
   @override
